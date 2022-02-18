@@ -76,13 +76,13 @@ DataFlashClassSubClass2     =0x79
 DataFlashClassSubClass3     =0x7a
 
 i2c_port = 3
-pin_SDA = 17
-pin_SDC = 27
+pin_SDA = 8
+pin_SDC = 7
 
 sb_address = 0x0b
 
-os.system("raspi-gpio set 17 pu")
-os.system("raspi-gpio set 27 pu")
+os.system("raspi-gpio set 7 pu")
+os.system("raspi-gpio set 8 pu")
 
 bus=SMBus(i2c_port)
 # b=bus.read_word_data(sb_address,CellVoltage3)
